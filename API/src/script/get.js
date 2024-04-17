@@ -16,9 +16,9 @@ fetch(url)
 .then(json=>{
   console.log(json.aluno[2].matricula);
   console.log(json.aluno);
-  document.querySelector("#aluno").value = json.aluno [1].nome;
-  document.querySelector("#matricula").value = json.aluno [1].matricula;
-  document.querySelector("#turno").value = json.aluno [1].turno;
+  document.querySelector("#aluno").value = json.aluno [4].nome;
+  document.querySelector("#matricula").value = json.aluno [4].matricula;
+  document.querySelector("#turno").value = json.aluno [4].turno;
 })
 
 let body= {

@@ -1,0 +1,16 @@
+*{
+    background: linear-gradient(90deg, grey,#fff, grey);
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+button{
+    font-size: 100%;
+    cursor:pointer;
+}

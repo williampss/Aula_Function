@@ -1,4 +1,4 @@
-//Chamada cliente: inserir noome 
+//Chamada cliente: inserir nome 
 // let url = 'https://api.sheety.co/ddf3af588b1d31b5f456b34f4faefd35/2Dn/aluno/2';
 // let body = {
 //   aluno: {
