@@ -1,10 +1,10 @@
 
-.container{
-  background-color: blue;
-  width: 25%;
-  margin: auto;
-  border-radius: 20px;
-  border: 10px solid black;
+.Card_temp{
+ background-color: blue;
+ width: 30%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
   gap:100px
 }
 button{

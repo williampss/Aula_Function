@@ -2,7 +2,7 @@
 .App {
   text-align: center;
   margin:100px;
-  margin-top: 100px;
+  margin-top: 4px;
 
 }
 .container{
@@ -29,11 +29,8 @@ button{
 }
 p{
   color: rgb(233, 233, 235);
-  border: solid #fff;
-  width: 200px;
-  height: 60px;
-  border-radius: 20px;
-  box-shadow:2px 2px 2px rgba(0,0,0,0.90);
+  /* border-radius: 20px;
+  box-shadow:2px 2px 2px rgba(0,0,0,0.90); */
  }
 .boxHigh{
   padding-top: 30px;

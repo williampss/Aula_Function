@@ -1,13 +1,14 @@
 import {useState, useEffect} from 'react';
 import './App.css';
-import {  FaTemperatureHigh, FaThermometer, FaWater, FaWind } from "react-icons/fa";
+import {  FaTemperatureHigh, FaWind } from "react-icons/fa";
 import { LuLocateFixed, LuText } from "react-icons/lu";
 import City from "./components/image/undraw_Mobile_user_re_xta4-removebg-preview.png"
+import CardSemana from './components/clima';
 
 // import Clima from './components/clima/index';
 
-function App() {
-  let temperatura= 30;
+export function App() {
+  let temperatura= 30; 
   const [stateTemp, setstatTemp] = useState(0)
   const [stateDescription, setstateDescription] = useState("Descrição")
   const [stateWind, setstateWind] = useState(0)
@@ -49,13 +50,25 @@ const dadoEntrada = (evento) =>{
       </div>
       <button onClick= {callApi}>Pesquisar</button>
       <div className='boxHigh'>
-      <p><LuLocateFixed/> {cidade}</p>
-      <p><FaTemperatureHigh/> {stateTemp}</p>
+        <p><LuLocateFixed/> {cidade}</p>
+        <p><FaTemperatureHigh/> {stateTemp}</p>
+        </div>
+        <div className='boxDown'>
+        <p><LuText/>{stateDescription}</p>
+        <p><FaWind/> {stateWind} km/h</p>
       </div>
-      <div className='boxDown'>
-      <p><LuText/>{stateDescription}</p>
-      <p><FaWind/> {stateWind} km/h</p>
-      </div>
+
+      {/* 
+      Entrada de dados
+      imagem  
+      input
+      botao
+      Card
+      Semana
+      7xCard
+      
+      
+    */}
 
       </div>
      
@@ -69,6 +82,12 @@ const dadoEntrada = (evento) =>{
           return(<Clima diaSemana={dia}></Clima>)
         })
       } */}
+      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
     </div>
   );
 }

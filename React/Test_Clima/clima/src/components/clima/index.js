@@ -1,13 +1,12 @@
 import './clima.css';
-function Clima(temp){
+import {} from '../../App'
+export function CardSemana(props){
   return(
-       <div className='container'>
-      <h2>{temp.diaSemana}</h2>
-      <h3>São Paulo</h3>
-      <h1>16ºc</h1>
-      <p>nublado</p>
-    </div>
-
+       <div className='Card_temp'>
+        <p>dia</p>
+        <p>{props.temperatura}</p>
+        <p>{props.descricao}</p>  
+       </div>
   )
 }
-export default Clima;
+export default CardSemana;
