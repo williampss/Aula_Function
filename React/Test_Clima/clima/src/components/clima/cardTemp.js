@@ -3,9 +3,9 @@ import {} from '../../App'
 export function CardSemana(props){
   return(
        <div className='Card_temp'>
-        <p>dia</p>
-        <p>{props.temperatura}</p>
-        <p>{props.descricao}</p>  
+        <p className='textCard'>dia</p>
+        <p className='textCard'>{props.temperatura}</p>
+        <p className='textCard'>{props.descricao}</p>  
        </div>
   )
 }

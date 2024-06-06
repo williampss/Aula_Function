@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Indie+Flower&family=Jersey+20&family=Lora:ital,wght@0,400..700;1,400..700&family=Permanent+Marker&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
 .App {
   text-align: center;
+  justify-content: center;
   margin:100px;
   margin-top: 4px;
 
@@ -29,8 +30,6 @@ button{
 }
 p{
   color: rgb(233, 233, 235);
-  /* border-radius: 20px;
-  box-shadow:2px 2px 2px rgba(0,0,0,0.90); */
  }
 .boxHigh{
   padding-top: 30px;
@@ -54,6 +53,11 @@ img{
    background: linear-gradient(90deg, rgb(73, 98, 145),  rgb(73, 98, 145), rgb(85, 92, 105));
    font-family: "Poppins", sans-serif;
  }
+.Card{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* .App-logo {
   height: 40vmin;

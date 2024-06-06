@@ -1,12 +1,16 @@
 
 .Card_temp{
- background-color: blue;
- width: 30%;
+ background-color: transparent;
+ width: 10%;
  display: flex;
  justify-content: center;
  flex-direction: column;
-  gap:100px
+ border-radius: 20px;
+ border: solid black;
+ gap: 2px;
 }
-button{
-  background-color: rde;
+.textCard{
+  font-size: 70%;
+  font-weight: bold;
+  color: black;
 }

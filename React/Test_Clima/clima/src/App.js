@@ -3,7 +3,7 @@ import './App.css';
 import {  FaTemperatureHigh, FaWind } from "react-icons/fa";
 import { LuLocateFixed, LuText } from "react-icons/lu";
 import City from "./components/image/undraw_Mobile_user_re_xta4-removebg-preview.png"
-import CardSemana from './components/clima';
+import CardSemana from './components/clima/cardTemp';
 
 // import Clima from './components/clima/index';
 
@@ -57,38 +57,17 @@ const dadoEntrada = (evento) =>{
         <p><LuText/>{stateDescription}</p>
         <p><FaWind/> {stateWind} km/h</p>
       </div>
-
-      {/* 
-      Entrada de dados
-      imagem  
-      input
-      botao
-      Card
-      Semana
-      7xCard
-      
-      
-    */}
-
+      <div className='Card'>
+        <CardSemana descricao={stateDescription} temperatura={stateTemp}/>
+        <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+        <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+        <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+        <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+        <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+        <CardSemana descricao={stateDescription} temperatura={stateTemp} />
+     </div>
       </div>
-     
-      {/* <butoon onClick= {() => {console.log(contador = contador + 1)}}>Clique Aqui</butoon>
-      <button onClick ={()=> {setContadorEstado(contadorEstado + 1)}}>Clique Aquuui</button>
-      <h1>{contadorEstado}</h1>
-      <button onClick={contaClique}>Clique Aqui</button>
-      <h1>{contador}</h1>
-      {
-        diaSemana.map((dia) =>{
-          return(<Clima diaSemana={dia}></Clima>)
-        })
-      } */}
-      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
-      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
-      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
-      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
-      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
-      <CardSemana descricao={stateDescription} temperatura={stateTemp} />
-    </div>
+      </div>
   );
 }
 
